@@ -1,0 +1,19 @@
+@import url('./base/_globals.css');
+@import url('./components/_header.css');
+@import url('./components/_form.css');
+@import url('./components/_task.css');
+@import url('./components/_filter.css');
+
+.main-content {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr 2fr;
+    }
+}

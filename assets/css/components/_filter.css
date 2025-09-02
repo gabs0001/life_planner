@@ -1,0 +1,32 @@
+.filter-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.filter-controls label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--color-dark-grey);
+}
+
+.filter-select {
+    padding: .4rem .2rem;
+    border: 1px solid var(--color-light-grey);
+    border-radius: 8px;
+    font-size: 1rem;
+    color: var(--color-dark-grey);
+    background-color: var(--color-white);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-select:hover {
+    border-color: var(--color-accent-blue);
+}
+
+.filter-select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(var(--color-accent-blue-rgb), 0.3);
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Planner - Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="header__title">Life Planner</h1>
+    </header>
+
+    <main class="main-content">
+        <section class="task-form-section">
+            <h2 class="task-form-section__title">Adicionar Nova Tarefa</h2>
+            <form id="task-form" class="task-form">
+                <div class="task-form__group">
+                    <label for="task-title" class="task-form__label">Título da Tarefa</label>
+                    <input type="text" id="task-title" class="task-form__input" placeholder="Ex: Estudar JavaScript" required>
+                </div>
+                
+                <div class="task-form__group">
+                    <label for="task-category" class="task-form__label">Categoria</label>
+                    <select id="task-category" class="task-form__select">
+                        <option value="pessoal">Pessoal</option>
+                        <option value="trabalho">Trabalho</option>
+                        <option value="estudos">Estudos</option>
+                    </select>
+                </div>
+
+                <div class="task-form__group">
+                    <label for="task-priority" class="task-form__label">Prioridade</label>
+                    <select id="task-priority" class="task-form__select">
+                        <option value="baixa">Baixa</option>
+                        <option value="media">Média</option>
+                        <option value="alta">Alta</option>
+                    </select>
+                </div>
+
+                <button id="btn-add-task" type="submit" class="task-form__button">Adicionar Tarefa</button>
+            </form>
+        </section>
+
+        <section class="task-list-section">
+            <h2 class="task-list-section__title">Minhas Tarefas</h2>
+            
+            <form class="filter-form">
+                <div class="filter-controls">
+                    <label for="filter-category">Filtrar por Categoria:</label>
+                    <select id="filter-category" class="filter-select">
+                        <option value="all">Todas</option>
+                        <option value="pessoal">Pessoal</option>
+                        <option value="trabalho">Trabalho</option>
+                        <option value="estudos">Estudos</option>
+                    </select>
+                </div>
+
+                <div class="filter-controls">
+                    <label for="filter-priority">Filtrar por Prioridade:</label>
+                    <select id="filter-priority" class="filter-select">
+                        <option value="all">Todas</option>
+                        <option value="baixa">Baixa</option>
+                        <option value="media">Média</option>
+                        <option value="alta">Alta</option>
+                    </select>
+                </div>
+
+            </form>
+
+            <ul id="task-list" class="task-list" aria-live="polite"></ul>
+        </section>
+
+        
+
+    </main>
+
+    <script type="module" src="./assets/js/app.js"></script>
+</body>
+</html>

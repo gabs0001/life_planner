@@ -1,0 +1,10 @@
+.header {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 2rem;
+    text-align: center;
+}
+
+.header__title {
+    font-weight: 600;
+}
