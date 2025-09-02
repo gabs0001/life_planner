@@ -1,5 +1,6 @@
 const priorityMap = { 'baixa': 'Baixa', 'media': 'Média', 'alta': 'Alta' }
 
+// obtém a lista, cria um elemento, seta suas propriedades e preenche o innerHTML e faz o append do item na lista
 export function renderTask(task) {
     const taskList = document.getElementById('task-list');
 
@@ -47,12 +48,12 @@ export function renderTask(task) {
     taskList.appendChild(listItem);
 }
 
+// obtém a lista, esvazia o innerHTML e renderiza todas as tasks existentes
 export function renderAllTasks(tasks) {
     const taskList = document.getElementById('task-list');
     taskList.innerHTML = '';
     tasks.forEach(task => renderTask(task));
 }
-
 
 /*
 <i class="fa-solid fa-pencil"></i>
