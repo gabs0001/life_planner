@@ -2,7 +2,7 @@
 
 O **Life Planner** é um aplicativo de gerenciamento de tarefas desenvolvido com JavaScript puro. Ele foi projetado para ser uma ferramenta simples e eficaz para organizar o dia a dia, com funcionalidades essenciais que demonstram uma arquitetura de código robusta e seguindo as melhores práticas de desenvolvimento web.
 
-Acesse a versão online aqui: [life-planner-kohl.vercel.app](https://www.google.com/search?q=https://life-planner-kohl.vercel.app)
+Acesse a versão online aqui: [life-planner-kohl.vercel.app](https://life-planner-kohl.vercel.app/)
 
 ### ✨ Funcionalidades
 
